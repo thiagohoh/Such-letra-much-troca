@@ -1,0 +1,6 @@
+'(inc 0)
+(inc 0)
+(loopero texto)
+(loopero texto 0 4)
+(loopero texto 0 3)
+(loopero texto 5 9)

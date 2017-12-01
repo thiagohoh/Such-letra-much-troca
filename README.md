@@ -1,2 +1,7 @@
-# Such-letra-much-troca
-Letroca 
+# consoleclojure
+
+A Clojure app to ... well, that part is up to you.
+
+## Usage
+
+FIXME
