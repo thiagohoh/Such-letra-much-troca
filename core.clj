@@ -6,8 +6,6 @@
 
 
 
-(defn epa []
-  (println "epa"))
  
 (def userpoints 11); user points
 ;(def listo (reador filero)); lixta
@@ -28,9 +26,11 @@
   
   (while (= truzao true)
     (do 
+      (println)
       (println "---     "   tesuto "   ------");prints the word from file
-      
+      (println)
       (println "--- Degete ---")
+      (println)
       (let [userinput (read-line)];get user input
         (if (not= (some #{userinput} lixta) nil); if user input its on the list
           (do (println "Ponto pra vc ")
@@ -56,28 +56,33 @@
 
 
 
-(defn -main [y] ;;receber true or false pro while pra sair depois quando chamar de novo na recurcao
-  (println "-------------------------------------")
-  (println "--------SUCH LETRA MUCH TROCA--------")
-
-  (def filero "p1.txt")
-  (def filero2 "p2.txt")
-  (def filero3 "p3.txt")
-  (def filero4 "p4.txt")
-  (def filero5 "p5.txt")
-  (def filero6 "p6.txt")
-  (def the-lista (seq [filero filero2 filero3 filero4 filero5 filero6])); all files into a seq
+(defn -main []
   
   
-  (def the-lista (shuffle the-lista));shuffle na ordem dos files
+  (def the-tru true) 
+  (while (= the-tru true)
+    (println)
+    (println "-------------------------------------")
+    (println "--------SUCH LETRA MUCH TROCA--------")
+    (println)
+    (def filero "p1.txt")
+    (def filero2 "p2.txt")
+    (def filero3 "p3.txt")
+    (def filero4 "p4.txt")
+    (def filero5 "p5.txt")
+    (def filero6 "p6.txt")
+    (def the-lista (seq [filero filero2 filero3 filero4 filero5 filero6])); all files into a seq
   
-  (def all-true true)  
-  (def myatom (atom (first the-lista)))
-  (while (= all-true true) 
-    
+  
+    (def the-lista (shuffle the-lista));shuffle na ordem dos files
+  
+    (def all-true true)  
+    (def myatom (atom (first the-lista)))
+    (while (= all-true true);all-true 
+      (println)
       (println "---- Digite start para começar ----")
-      (println "---- Digite quit para sair    ----")
-      
+      (println "---- Digite quit para sair     ----")
+      (println)
       (let [input (read-line)];pega input 
         (if (= input "start")
           (do
@@ -100,26 +105,19 @@
             ;(println @myatom)
             (def pecapero (+ pecapero 2));incrementa  o pecapero
             (def truzao true))
-          (do
-            (def all-true false)))))
+          (do            
+            (def all-true false)
+            (def the-tru false))))));;all-tru
             
           
           ;(System/exit 0))))  
   
-  (epa)
-  ;(first-word 5 filero)
-  (def all-true true)
-  (def inp (-main true))
-  (println inp)
-  (if (= inp "quit")
-    (do
-      (println "------>" userpoints "<----- Pontos")
-      (println "WE'RE OUT BOYS !!")
-      (System/exit 0)))
-  (def all-true false)
+  
+ 
+  (println)
   (println "------>" userpoints "<----- Pontos")
-  (println "WE'RE OUT BOYS !!")) 
-    
+  (println "WE'RE OUT BOYS !!") 
+  (println))  ;end main
  
   
   
