@@ -117,38 +117,5 @@
   (println)
   (println "------>" userpoints "<----- Pontos")
   (println "WE'RE OUT BOYS !!") 
-  (println))  ;end main
- 
+  (println))  ;end main  
   
-  
-  
-  
-  
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-
-
