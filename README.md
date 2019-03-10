@@ -1,7 +1,7 @@
 # consoleclojure
 
-A Clojure app to ... well, that part is up to you.
+A Clojure console game
 
 ## Usage
 
-FIXME
+
