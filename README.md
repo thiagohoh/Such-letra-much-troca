@@ -2,6 +2,7 @@
 
 A Clojure console game
 
-## Usage
+## Class Project
+12 hours project
 
 
